@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Sajid Miya">
+    <meta name="description" content="HTML5 lab exercises">
+    <title>lab exercise html5</title>
+</head>
+<body>
+    <header>
+        <p>This page demonstrates some of the HTML5 structural elements</p>
+    </header>  
+    
+    <nav>
+        <ul>
+            <li>HTML5 Structural elements</li>
+        </ul>
+    </nav>
+
+    <section id="html-elements">
+        <h1>HTML5 Elements</h1>
+
+        <section id="html5-strucutal-elements">
+            <h2>HTML5 Structural Elements</h2>
+            <p>HTML structural elements include: header, nav, section, 
+                article, aside, and footer</p>
+             <ul>
+                <li>
+                   A header defines the header of a page or a page section
+                </li>
+                <li>
+                   HTML5 introduced the nav to replace: div id="nav"
+                </li>
+                <li>
+                   Element section is a grouped area of content
+                </li>
+              </ul>
+        </section>
+
+        <section id="html5-common-elements">
+            <h2>HTML5 Common Elements</h2>
+            <nav>
+                <ul>
+                   <li>
+                      <a href="html5-structural-elements.html">HTML5 Structural elements</a>
+                   </li>
+                   <li> <a href="html5-validation.html">HTML5 Validation</a></li>
+                   <li> <a href="html5-common-elements.html"> HTML5 Common Elements</a></li>
+                   <li><a href="#hyperlink">Hyperlink</a></li>
+                   <li><a href="#images-to-convey-content">Images to Convey Content</a></li>
+                   <li><a href="#images-in-hyperlinks-for-navigation">Images in Hyperlinks for Navigation</a></li>
+                   <li><a href="#divisions">Divisions</a></li>
+                   <li><a href="#span">Span Element</a></li>
+                   <li><a href="#block-quotes">Block Quotes</a></li>
+                   <li><a href="#inline-quotes">Inline Quotes</a></li>
+                   <li><a href="#forms">Forms</a></li>
+                   <li><a href="#form-widgets">Form Widgets</a></li>
+                   <li><a href="#radio-buttons">Radio Buttons</a></li>
+                   <li><a href="#check-boxes">Check Boxes</a></li>
+                   <li><a href="#file-picker">File Picker</a></li>
+                </ul>
+             </nav>
+        </section>
+
+        <section id="hyperlink">
+            <h2>Hyperlink</h2>
+            <a href="https://developer.mozilla.org/">click to go to the href address</a>
+            <nav>
+                <ul>
+                   <li>
+                      <a href="html5-structural-elements.html">HTML5 Structural elements</a>
+                   </li>
+                   <li>HTML5 Validation</li>
+                   <li>HTML5 Common Elements</li>
+                </ul>
+             </nav>
+             <a href="#html5-elements">HTML5 Structural elements</a>
+             <a href="html5-structural-element.html#html5-elements">HTML5 Structural elements</a>
+             <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Inline_text_semantics">MDN Inline Text Semantics</a>
+
+        </section>
+
+        <section id="images-to-convey-content">
+            <h2>Images to Convey Content</h2>
+            <figure>
+                <img src="images/star.svg" alt="Example SVG image" />
+                <img src="images/star.png" alt="Example PNG image" />
+                <figcaption>SVG and PNG format comparison.</figcaption>
+              </figure>
+        </section>
+
+        <section id="images-in-hyperlinks-for-navigation">
+            <h2>Images in hyperlinks for navigation</h2>
+            <a href="https://en.wikipedia.org/wiki/Scalable_Vector_Graphics">
+                <img src="images/star.svg" alt="Image formats"/> Read about image formats
+             </a>
+        </section>
+
+        <section id="divisions">
+            <h2>Divisions/div element</h2>
+            <div id="div-example" class="highlight">
+                <p>Any number of element to be grouped into one division</p>
+             </div>
+        </section>
+
+        <section id="span">
+            <h2>Span element</h2>
+            <p>The following is part of a paragraph <span class="highlight">wrapped in a span element</span> so that it can be selected.</p>
+        </section>
+
+        <section id="block-quotes">
+            <h2>Block quotes</h2>
+            <blockquote cite="http://developer.mozilla.org">
+                <p>This is a quotation taken from the Mozilla Developer Center.</p>
+             </blockquote>
+        </section>
+
+        <section id="inline-quotes">
+            <h2>Inline quotes</h2>
+            <p>In the new world of semantic markup, 
+                <q cite="http://ebbi.github.io">
+                Separation of content from how it is presented is key to modern web development.
+                </q>.
+             </p>
+        </section>
+
+        <section id="forms">
+            <h2>Forms</h2>
+            <form method="get" action="server_program_name">
+
+                <label for="email">Email: </label>
+                <input type="text" id="email" name="email" />
+             
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" />
+             
+                <button type="submit" value="submit">Sign in</button>
+             
+            </form>
+
+            <section id="form-widgets">
+                <h3>Form Widgets</h3>
+
+                <section id="radio-buttons">
+                    <h4>Radio Buttons</h4>
+                    <p>Choose your favourite colour:
+                        <input type="radio" name="colour" value="red" checked="checked" /> Red
+                        <input type="radio" name="colour" value="green" /> Green
+                        <input type="radio" name="colour" value="blue" /> Blue
+                     </p>
+                     <p>Which is your favourite pass time?
+                        <input type="radio" name="hobby" value="travel" /> Travel
+                        <input type="radio" name="hobby" value="food" /> Food
+                        <input type="radio" name="hobby" value="sky diving" /> Sky Diving
+                     </p>
+                </section>
+
+                <section id="check-boxes">
+                    <h4>Check Boxes</h4>
+                    <p>Select your favourite colour(s):
+                        <input type="checkbox" name="red" value="true" checked="checked" /> red
+                        <input type="checkbox" name="green" value="true" /> green
+                        <input type="checkbox" name="blue" value="true" checked="checked" /> blue
+                     </p>
+                </section>
+
+                <section id="file-picker">
+                    <h4>File Picker</h4>
+                    <form method="post" enctype="multipart/form-data" action="my_server_prog">
+                        <p>
+                           <label for="fileupload">Please choose a file to upload: </label>
+                           <input type="file" id="fileupload" name="file1" />
+                        </p>
+                     </form>
+                </section>
+
+            </section>
+
+        </section>
+
+    </section>
+    <br>
+    <br>
+
+    <footer>
+        &copy; no rights whatsoever!
+    </footer>
+
+</body>
+</html>
